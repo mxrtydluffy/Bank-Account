@@ -27,3 +27,12 @@ class BankAccount:
             print('Error please try again')
         else:
             return self.balance
+
+    def obtain_balance(self):
+        """
+        Displays user's current account balance.
+        No parameters needed since it's already declared.
+        """
+        return self.balance
+
+#Define 3 different user bank accounts. Refer back to Class BankAccount()
