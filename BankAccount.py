@@ -35,4 +35,8 @@ class BankAccount:
         """
         return self.balance
 
+    def add_interest(self, monthly_interest):
+        interest = self.balance * monthly_interest
+        self.balance += interest
+
 #Define 3 different user bank accounts. Refer back to Class BankAccount()
