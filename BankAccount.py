@@ -40,14 +40,31 @@ class BankAccount:
         print(f'Your current balance is: {self.balance}')
 
     def add_interest(self, monthly_interest):
-        interest = self.balance * monthly_interest
+        """
+        Adds uinterest to the user's balance.
+        Annual interest rate 1% (0.083% monthly)
+        """
+        interest = self.balance * 0.00083
         self.balance += interest
 
     def print_statement(self):
+        """
+        Prints message to user with all information.
+        Imbedded line break.
+        """
         print(f'{self.full_name}\n {self.account_number}\n {self.balance}')
 
 
 #Define 3 different user bank accounts. Refer back to Class BankAccount()
+
+#Mitchell Hudson
+mitchell_account = BankAccount("Mitchell Hudson")
+mitchell_account.deposit(400000)
+mitchell_account.print_statement()
+mitchell_account.add_interest()
+mitchell_account.print_statement()
+mitchell_account.withdraw(150)
+mitchell_account.print_statement
 
 # Marty Marinda
 marty_account = BankAccount("Marty Marinda")
