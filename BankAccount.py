@@ -70,7 +70,7 @@ mitchell_account.print_statement
 
 # Marty Marinda
 marty_account = BankAccount("Marty Marinda", "49710467")
-marty_account.getbalance()
+marty_account.print_statement()
 marty_account.deposit(1000)
 marty_account.print_statement()
 marty_account.add_interest()
