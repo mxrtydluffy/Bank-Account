@@ -1,7 +1,4 @@
-import random
-
 #Defined BankAccount
-#random.randint gets random integer
 class BankAccount:
     def __init__(self, full_name, account_number, balance = 0):
         self.full_name = full_name
@@ -41,7 +38,7 @@ class BankAccount:
 
     def add_interest(self):
         """
-        Adds uinterest to the user's balance.
+        Adds interest to the user's balance.
         Annual interest rate 1% (0.083% monthly)
         """
         interest = self.balance * 0.00083
@@ -52,6 +49,7 @@ class BankAccount:
         """
         Prints message to user with all information.
         Imbedded line break.
+        Could of added variable to only display last 4 digits only.
         """
         print(f'{self.full_name}\n {self.account_number}\n {self.balance}')
 
